@@ -25,8 +25,9 @@ router.post("/", function(req, res) {
   });
 });
 
-router.put("/:id?", function(req, res) {
-  var condition = "id = ${req.params.id}";
+router.put("/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+  // var condition = `id = ${req.params.id}`;
 
   console.log("condition", condition);
 
@@ -38,4 +39,4 @@ router.put("/:id?", function(req, res) {
 });
 
 // Export routes for server.js to use.
-module.exports = router;
+id=module.exports = router;
