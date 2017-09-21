@@ -3,6 +3,8 @@ var mysql = require("mysql");
 
 var keys = process.env.JAWSDB_URL || require('../keys.js')
 
+console.log(keys)
+
 var connection = mysql.createConnection(keys);
 
 
