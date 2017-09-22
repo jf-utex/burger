@@ -1,9 +1,25 @@
-<h1>Burgers!</h1>
+<div class="container-fluid">
 
-<h2>Fresh Burgers!</h2>
+  <div class="row">
+    <div id="wrapperHeader">
+      <div class="header">
+
+        <h1>Burgers!</h1>
+        <h2>Fresh Burgers!</h2>
+
+
+        <img src="/assets/img/burger.jpeg" alt="logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+
+</div>
 <div class="row">
   <div class="col-md-6">
-    <div class="panel panel-info">
+    <div class="panel panel-success">
       <div class="panel-heading">
         <h3 class="panel-title">Burgers waiting to be eaten!</h3>
       </div>
@@ -16,7 +32,7 @@
 
                 <form action="/{{id}}?_method=PUT" method="POST">
                   <input type="hidden" name="devoured" value="true">
-                  <button type="submit">YUM</button>
+                  <button type="submit" class="btn btn-info">YUM!!!</button>
                 </form>
               </li>
             {{/unless}}
@@ -25,10 +41,8 @@
       </div>
     </div>
   </div>
-</div>
-
   <div class="col-md-6">
-    <div class="panel panel-info">
+    <div class="panel panel-success">
       <div class="panel-heading">
         <h3 class="panel-title">Eaten Burgers!</h3>
       </div>
@@ -45,22 +59,24 @@
       </div>
     </div>
   </div>
+</div>
+</div>
 
-
-
-  <div class="panel panel-success">
-    <div class="panel-heading">
-      <h3 class="panel-title">Add A Burger!</h3>
-    </div>
-    <div class="panel-body">
-      <form class="create-update-form" action="/" method="POST">
-
-        <div class="form-group">
-          <input type="text" id="ca" name="burger_name">
-        </div>
-
-        <button type="submit" class="btn btn-info">Submit</button>
-        <p>What is the burger of your dreams?</p>
-      </form>
-    </div>
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add A Burger!</h3>
   </div>
+
+  <div class="panel-body">
+    <p>What is the burger of your dreams?</p>
+    <form class="create-update-form" action="/" method="POST">
+
+      <div class="form-group">
+        <input type="text" id="ca" name="burger_name">
+      </div>
+
+      <button type="submit" class="btn btn-info">Submit</button>
+
+    </form>
+  </div>
+</div>

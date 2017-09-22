@@ -1,3 +1,13 @@
 body{
-  background-color: yellow;
+  background-color: #9DC3C1;
+}
+
+.container-fluid{
+  text-align: center;
+}
+div.header {
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
 }
